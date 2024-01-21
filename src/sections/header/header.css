@@ -6,9 +6,6 @@ header {
     place-items: center;
     background: var(--color-white);
     transition: var(--transition);
-    background-image: url("../../assets/header/banner-background.svg");
-    background-size: cover;
-    background-position: center;
 }
 
 /* Styling for the container within the header */
@@ -20,22 +17,15 @@ header {
     justify-self: center;
 }
 
-.lightning_top {
-    position: absolute;
-    top: 5px;
-    right: 300px;
-}
-
-.lightningBot {
-    position: absolute;
-    bottom: -140px;
-    right: -10px;
-}
 
 /* Styling for the profile image within the header */
 .header_profile {
     width: 60rem;
     aspect-ratio: 1/1;
+}
+
+.innovative {
+    color: var(--color-primary);
 }
 
 /* Styling for the paragraph within the header container */
@@ -99,10 +89,6 @@ header {
         text-align: center;
     }
 
-    .lightning_top,
-    .lightningBot {
-        display: none;
-    }
 
     .header_profile {
         width: 14rem;

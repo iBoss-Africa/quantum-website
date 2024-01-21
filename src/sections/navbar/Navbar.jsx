@@ -1,7 +1,6 @@
 import './navbar.css'
 import Logo from '../../assets/navbar/logo.svg'
 import data from './data'
-import { CiMail } from "react-icons/ci";
 
 const Navbar = () => {
   return (
@@ -23,7 +22,7 @@ const Navbar = () => {
           }
         </ul>
         {/* Nav icon button */}
-        <a href="#contact" id='nav_btn' className='btn primary'>Get in Touch<CiMail style={{ fontSize: '1.4em' }} /></a>
+        <a href="#contact" id='nav_btn' className='btn primary'>Contact Us</a>
       </div>
 
     </nav>

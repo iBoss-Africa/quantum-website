@@ -21,12 +21,17 @@ const About = () => {
 
         {/* Right side of the about section */}
         <div className="about_right">
-          <h2>We focus mainly on <br /> providing innovative softwares</h2>
+          <h2>About Us</h2>
           {/* Introduction paragraphs */}
           <p>
-            Fuelled by a relentless pursuit of excellence, we embarked on a
-            mission to <br /> craft bespoke software solutions tailored to meet the
-            dynamic needs of <br /> businesses across industries.
+            QUANTUM COMMERCE AND RETAIL SERVICES LIMITED is a global company
+            registered in Nigeria to provide technology-driven solutions in areas that
+            impact quality of life.
+          </p>
+
+          <p>
+          We are a House of Brands, each carefully developed to link with the other,
+leveraging capabilities to unify hitherto dispersed services in commerce .
           </p>
           {/* Read More button */}
           <a href="/" className="btn primary">
