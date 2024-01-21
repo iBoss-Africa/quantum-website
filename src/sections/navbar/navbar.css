@@ -1,0 +1,71 @@
+/* Styling for the navigation bar */
+nav{
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
+    transition: var(--transition);
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 2px 0 rgba(136, 140, 181, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Styling for the container within the navigation bar */
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_container a:hover{
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+/* Styling for the logo within the navigation bar */
+.nav_logo{
+    width: 10rem;
+}
+
+/* Styling for the navigation menu within the navigation bar */
+.nav_menu{
+    display: flex;
+    gap: 3.5rem;
+}
+
+
+/* Styling for the theme icon button within the navigation bar */
+#nav_btn{
+    background: var(--color-primary);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.313rem;
+}
+
+/*HIDE NAV MENU ON TABLET AND PHONES*/
+
+@media screen and (max-width: 1024px) {
+    .nav_menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav_menu{
+        display: none;
+    }
+}
