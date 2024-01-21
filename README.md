@@ -1,3 +1,3 @@
-# iBoss Website
+# Quantum Website
 
-This is the marketing website for iBoss
+This is the marketing website for Quantum Retail Services
