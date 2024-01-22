@@ -3,7 +3,11 @@
   padding: 20px 0; /* Added padding for better spacing */
 }
 
-.footer_image {
+img{
+  padding-bottom: 10px;
+}
+
+.footer_image_container {
   width: 100%;
   max-width: 400px; /* Adjust the maximum width for responsiveness */
   margin: 0 auto; /* Center the image */
