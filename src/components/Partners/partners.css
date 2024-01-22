@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4;
+    padding-bottom: 140px;
 }
 
 .partners_container {

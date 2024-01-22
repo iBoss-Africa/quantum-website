@@ -7,9 +7,10 @@ import OurSolutions from "./sections/oursolution/OurSolutions";
 // import Faqs from "./sections/faqs/Faqs";
 import Contact from "./sections/contact/Contact";
 import Footer from './sections/footer/Footer';
-// import AboutHeader from './sections/aboutheader/AboutHeader';
-// import Ourvision from "./sections/ourvision/Ourvision";
+import AboutHeader from './sections/aboutheader/AboutHeader';
+import Ourvision from "./sections/ourvision/Ourvision";
 import Partners from "./components/Partners/Partners";
+import Subscribe from "./sections/subscribe/Subscribe";
 // import Wework from "./sections/wework/Wework";
 
 
@@ -22,13 +23,15 @@ const App = () => {
       <OurSolutions />
       <Partners />
       <Contact />
+      <Subscribe/>
       <Footer />
+      <AboutHeader/>
+      <Ourvision />
       {/* <Services />
       <Ourprocess />
       <Faqs />
       <Wework/>
-      <AboutHeader/>
-      <Ourvision />
+      
        */}
     </main>
   );

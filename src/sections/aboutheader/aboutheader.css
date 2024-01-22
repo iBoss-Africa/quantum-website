@@ -2,11 +2,20 @@
     background: #FFFFFF;
 }
 
-.about_header_content h1 {
+.about_header_content h3 {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding-bottom: 20px;
 }
 
-.about_header_content p {
+/* .about_header_content p {
     text-align: center;
-    padding: 20px;
+    
+
+} */
+
+.orange{
+    color: var(--color-primary);
 }

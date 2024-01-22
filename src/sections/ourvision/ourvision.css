@@ -1,9 +1,45 @@
 #our_vision{
     padding-top: 6.875rem;
-    background: #FFFFFF;
+    background: #F2F2F2;
 }
 
 .our_vision_content {
     text-align: center;
     padding-bottom: 1.25rem;
+}
+
+.first_mission{
+    padding: 60px;
+
+}
+
+.mission_text{
+    padding: 40px;
+    /* border: solid 1px; */
+    background-color: #E77D22;
+    border-radius: 8px;
+    color: white;
+}
+
+.second_mission{
+    background-color: #F07D22;
+    padding: 20px;
+}
+
+.vision_text{
+    padding: 40px;
+    border: solid 1px;
+    background-color: #E77D22;
+    border-radius: 8px;
+    color: white;
+}
+
+.card_mission{
+    display: flex;
+}
+
+.card_mission p{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
 }
