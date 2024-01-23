@@ -7,7 +7,9 @@ import Phone from '../../assets/contact/Phone.svg';
 const ContactComponent = () => {
     return (
         <section id="our_contact">
-            <h2>Let's Talk About That Idea You Have</h2>
+            <h2>Contact Us</h2>
+            <h3>If you have any questions, please do not hesitate to send us a message.
+                We are always open to your questions, feedback and enquiries.</h3>
             <div className="container contact_info_container">
                 <div className="contact_information">
                     <div className="contact_info_item">
@@ -57,15 +59,15 @@ const ContactComponent = () => {
                         <form action="">
                             <div className="form_input">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" name="name" id="name" required/>
+                                <input type="text" name="name" id="name" required />
                             </div>
                             <div className="form_input">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" name="email" id="email" required/>
+                                <input type="email" name="email" id="email" required />
                             </div>
                             <div className="form_input">
                                 <label htmlFor="subject">Subject</label>
-                                <input type="subject" name="subject" id="subject" required/>
+                                <input type="subject" name="subject" id="subject" required />
                             </div>
                             <div className="form_input">
                                 <label htmlFor="message">Message</label>
