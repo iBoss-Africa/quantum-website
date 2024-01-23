@@ -1,87 +1,81 @@
-import React from 'react';
-import './contact.css';
-import Visit from '../../assets/contact/Visit.svg';
-import Email from '../../assets/contact/Email.svg';
-import Phone from '../../assets/contact/Phone.svg';
+import React from "react";
+import "./contact.css";
+import VisitIcon from "../../assets/contact/Visit.svg";
+import EmailIcon from "../../assets/contact/Email.svg";
+import PhoneIcon from "../../assets/contact/Phone.svg";
+import ContactImage from "../../assets/contact/rafiki.svg";
 
 const ContactComponent = () => {
     return (
         <section id="our_contact">
             <h2>Contact Us</h2>
-            <h3>If you have any questions, please do not hesitate to send us a message.
-                We are always open to your questions, feedback and enquiries.</h3>
             <div className="container contact_info_container">
-                <div className="contact_information">
-                    <div className="contact_info_item">
-                        <div className="icon_container">
-                            <img className="contact_info_item_img" src={Visit} alt="" />
+                <div className="contact_form_container">
+                    <img src={ContactImage} alt="Contact" />
+                    <form action="">
+                        <div className="form_input">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" name="name" id="name" required />
                         </div>
-                        <div>
-                            <h6>Visit us</h6>
-                            <p>
-                                173 Ogudu Road After Ogudu City Mall Opposite <br />
-                                St Andrews Anglican Church Ogudu Lagos
-                            </p>
+                        <div className="form_input">
+                            <label htmlFor="email">Email</label>
+                            <input type="email" name="email" id="email" required />
                         </div>
-                    </div>
-
-                    <div className="contact_info_item">
-                        <div className="icon_container">
-                            <img className="contact_info_item_img" src={Email} alt="" />
+                        <div className="form_input">
+                            <label htmlFor="subject">Subject</label>
+                            <input type="subject" name="subject" id="subject" required />
                         </div>
-                        <div>
-                            <h6>Email</h6>
-                            <p>info@iboss.com</p>
+                        <div className="form_input">
+                            <label htmlFor="message">Message</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                cols="30"
+                                rows="5"
+                            ></textarea>
                         </div>
-                    </div>
-
-                    <div className="contact_info_item">
-                        <div className="icon_container">
-                            <img className="contact_info_item_img" src={Phone} alt="" />
-                        </div>
-                        <div>
-                            <h6>Call</h6>
-                            <p>+234 916 155 4000, +234 916 166 4000</p>
-                        </div>
-                    </div>
-
-                    <div className="contact_info_item">
-                        <div>
-                            <h6>Request A Quote</h6>
-                            Want to do business with us? Send a request for
-                            Proposal and we will respond within five
-                            business days.
-                        </div>
-                    </div>
+                        <a href="/" className="btn primary">
+                            Get In Contact With Us
+                        </a>
+                    </form>
                 </div>
-                <div className="contact_form">
-                    <div className="contact_form_container">
-                        <form action="">
-                            <div className="form_input">
-                                <label htmlFor="name">Name</label>
-                                <input type="text" name="name" id="name" required />
-                            </div>
-                            <div className="form_input">
-                                <label htmlFor="email">Email</label>
-                                <input type="email" name="email" id="email" required />
-                            </div>
-                            <div className="form_input">
-                                <label htmlFor="subject">Subject</label>
-                                <input type="subject" name="subject" id="subject" required />
-                            </div>
-                            <div className="form_input">
-                                <label htmlFor="message">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="5"></textarea>
-                            </div>
-                            <button type="submit" className="btn primary">
-                                Get In Contact With Us
-                            </button>
-                        </form>
-                    </div>
+
+                <span className="divider">
+
+                </span>
+
+                <div className="contact_information_container">
+                    <ContactInfoItem
+                        icon={VisitIcon}
+                        title="Call"
+                        details="+234 916 155 4000, +234 916 166 4000"
+                    />
+                    <ContactInfoItem
+                        icon={EmailIcon}
+                        title="Email"
+                        details="info@iboss.com"
+                    />
+                    <ContactInfoItem
+                        icon={PhoneIcon}
+                        title="Visit us"
+                        details= {`173 Ogudu Road After Ogudu City Mall Opposite St Andrews Anglican Church Ogudu Lagos`}
+                    />
                 </div>
             </div>
         </section>
     );
 };
+
+const ContactInfoItem = ({ icon, title, details }) => (
+    <div className="contact_info_item">
+        <div className="icon_container">
+            <img className="contact_info_item_img" src={icon} alt="" />
+        </div>
+        <div>
+            <h6>{title}</h6>
+            <p>{details}</p>
+        </div>
+    </div>
+);
 
 export default ContactComponent;
