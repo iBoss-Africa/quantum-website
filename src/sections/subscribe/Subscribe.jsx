@@ -14,9 +14,9 @@ const Subscribe = () => {
           </div>
           <div className="form-container">
             <input className="input" placeholder="Your email" />
-            <a href="" className="btn primary">
+            <button type="submit" className="button">
               Subscribe
-            </a>
+            </button>
           </div>
         </div>
       </div>
