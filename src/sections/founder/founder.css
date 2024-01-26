@@ -1,0 +1,25 @@
+#founder{
+    background-color: #FFFFFF;
+}
+
+.founder_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    justify-self: center;
+}
+
+.founder_img img{
+width: 120%;
+height: auto;
+object-fit: cover;
+}
+
+.founder_text{
+    width: 50%;
+}
+
+.founder_text h2 {
+    padding-bottom: 20px;
+  }

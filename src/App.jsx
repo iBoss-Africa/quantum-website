@@ -1,38 +1,28 @@
+import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 import Navbar from "./sections/navbar/Navbar";
-import Header from "./sections/header/Header";
-import About from "./sections/about/About";
-// import Services from "./sections/services/Services";
-import OurSolutions from "./sections/oursolution/OurSolutions";
-// import Ourprocess from "./sections/ourprocess/Ourprocess";
-// import Faqs from "./sections/faqs/Faqs";
-import Contact from "./sections/contact/Contact";
 import Footer from './sections/footer/Footer';
-import AboutHeader from './sections/aboutheader/AboutHeader';
-import Ourvision from "./sections/ourvision/Ourvision";
-import Partners from "./components/Partners/Partners";
-import Subscribe from "./sections/subscribe/Subscribe";
-// import Wework from "./sections/wework/Wework";
+
 
 
 const App = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() =>{
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <main>
       <Navbar />
-      <Header />
-      <About />
-      <OurSolutions />
-      <Partners />
-      <Contact />
-      <Subscribe/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
-      <AboutHeader/>
-      <Ourvision />
-      {/* <Services />
-      <Ourprocess />
-      <Faqs />
-      <Wework/>
-      
-       */}
     </main>
   );
 };

@@ -8,11 +8,11 @@ const AboutHeader = () => {
       <div className="container about_header_container">
         <div className="about_header_content">
           {/* information section */}
-          <h3>
-            <span className="orange">QUANTUM COMMERCE AND RETAIL SERVICES LIMITED</span> is a <br /> global company
-            registered in Nigeria to provide technology <br /> driven solutions in
+          <h2>
+            <span className="orange">QUANTUM COMMERCE AND RETAIL SERVICES LIMITED</span> is a global company
+            registered in Nigeria to provide technology driven solutions in
             areas that impact quality of life
-          </h3>
+          </h2>
         </div>
 
         {/* Header image section */}

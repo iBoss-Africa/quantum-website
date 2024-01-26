@@ -12,10 +12,9 @@
 }
 
 /* Styling for the portrait image within the about section */
-.about_portrait{
-    height: fit-content;
-    max-height: 80rem;
-    transition: var(--transition);
+.about_portrait img{
+    height: 100%;
+    border-radius: 20px;
 }
 
 

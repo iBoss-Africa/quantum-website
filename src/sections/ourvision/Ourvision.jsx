@@ -10,7 +10,7 @@ const Ourvision = () => {
         </div>
 
         <div className="first_mission">
-          <div className="mission_text">
+          <div className="first_mission_text">
             <p>
               To empower businesses & communities through our products. We are
               dedicated to delivering cutting-edge solutions that solve
@@ -20,7 +20,7 @@ const Ourvision = () => {
         </div>
       </div>
       <div className="second_mission">
-        <div className="vision_text">
+        <div className="second_mission_text">
           <p>
             We designed Quantum Commerce Retail Services (Q-CRS) to provide
             solutions and improve transaction experience all through the
