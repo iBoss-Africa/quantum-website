@@ -16,7 +16,7 @@ const Header = () => {
           {/* information section */}
           <h1>
             Elevating Businesses
-            through <span className="innovative">Innovative</span> <br />
+            through <span className="innovative"><i>Innovative</i></span> <br />
             Solutions
           </h1>
 

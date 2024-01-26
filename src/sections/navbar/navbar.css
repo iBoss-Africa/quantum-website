@@ -2,7 +2,7 @@
 nav{
     width: 100vw;
     height: 5rem;
-    /* display: grid; */
+    display: grid;
     place-items: center;
     /* background-color: var(--color-primary); */
     position: fixed;
@@ -11,8 +11,7 @@ nav{
     z-index: 9;
     box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 8%, 3%, 2%);
     transition: var(--transition);
-    padding-left: 80px;
-    padding-right: 90px;
+    
 
     /* Glassmorphism */
     background: rgba(255, 255, 255, 0.6);
@@ -40,7 +39,7 @@ nav{
 /* Styling for the logo within the navigation bar */
 .nav_logo{
     width: 10rem;
-    margin: 0;
+    margin-right: 0;
 }
 
 /* Styling for the navigation menu within the navigation bar */
@@ -59,7 +58,6 @@ nav{
 
 /* Styling for the theme icon button within the navigation bar */
 #nav_btn{
-    position: relative;
     background: var(--color-primary);
     color: white;
     font-size: 1rem;
@@ -70,6 +68,7 @@ nav{
     align-items: center;
     border-radius: 0.313rem;
     padding: 0.5rem 1rem;
+    margin-left: 0;
 }
 
 /*HIDE NAV MENU ON TABLET AND PHONES*/
