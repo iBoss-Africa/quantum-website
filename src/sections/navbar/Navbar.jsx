@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav>
 
       {/* Container for the navigation elements */}
-      <div className="container nav_container">
+      <div className=" nav_container">
 
       <HashLink smooth to="/#top" className="nav_logo">
           <img src={Logo} alt="Logo" />
@@ -67,7 +67,7 @@ const Navbar = () => {
           </li>
         </ul>
         {/* Nav icon button */}
-        <a href="#contact" id='nav_btn' className='btn primary'>Contact Us</a>
+        <a href="#our_contact" id='nav_btn' className='btn primary'>Contact Us</a>
       </div>
 
     </nav>

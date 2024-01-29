@@ -14,8 +14,8 @@ const About = () => {
       <div className="container about_container">
         {/* Left side of the about section */}
         <div className="about_left">
-          <div className="about_portrait" style={{ height: '100%' }}>
-            <img src={Aboutimage} alt="AboutImage"  style={{ height: '100%' }}/>
+          <div className="about_portrait" >
+            <img src={Aboutimage} alt="" />
           </div>
         </div>
 

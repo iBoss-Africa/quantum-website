@@ -1,4 +1,4 @@
-import "./ourvision.css";
+import "./ourmission.css";
 import Card from "../../components/Card/Card";
 
 const Ourvision = () => {
