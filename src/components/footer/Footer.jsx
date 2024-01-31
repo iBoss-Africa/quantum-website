@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="socials">
               <img className="footer_social" src={twitter} alt="" />
               <img className="footer_social" src={instagram} alt="" />
-              <img className="footer_social" src={youtube} alt="" />
+              <img className="footer_social" src="" alt="" />
               <img className="footer_social" src={facebook} alt="" />
             </div>
           </div>

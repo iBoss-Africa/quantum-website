@@ -14,7 +14,7 @@ const About = () => {
       <div className="container about_container">
         {/* Left side of the about section */}
         <div className="about_left">
-          <div className="about_portrait" >
+          <div className="about_portrait">
             <img src={Aboutimage} alt="" />
           </div>
         </div>
@@ -25,13 +25,14 @@ const About = () => {
           {/* Introduction paragraphs */}
           <p>
             QUANTUM COMMERCE AND RETAIL SERVICES LIMITED is a global company
-            registered in Nigeria to provide technology-driven solutions in areas that
-            impact quality of life.
+            registered in Nigeria to provide technology-driven solutions in
+            areas that impact quality of life.
           </p>
 
           <p>
-          We are a House of Brands, each carefully developed to link with the other,
-leveraging capabilities to unify hitherto dispersed services in commerce .
+            We are a House of Brands, each carefully developed to link with the
+            other, leveraging capabilities to unify hitherto dispersed services
+            in commerce .
           </p>
           {/* Read More button */}
           <a href="/" className="btn primary">

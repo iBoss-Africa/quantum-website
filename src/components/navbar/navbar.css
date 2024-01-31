@@ -19,6 +19,10 @@ nav{
     -webkit-backdrop-filter: blur(10px);
 }
 
+HashLink{
+    margin-right: 30%;
+}
+
 /* Styling for the container within the navigation bar */
 .nav_container{
     display: flex;
@@ -31,6 +35,10 @@ nav{
     font-weight: 400;
 }
 
+.space_container{
+    padding-left: 800px;
+}
+
 /* Styling for the logo within the navigation bar */
 .nav_logo{
     width: 10rem;
@@ -41,6 +49,7 @@ nav{
     display: flex;
     gap: 3.5rem;
     justify-content: flex-start;
+    padding-right: 10px;
 }
 
 .nav_menu a {
@@ -65,16 +74,28 @@ nav{
     padding: 0.5rem 1rem;
 }
 
+#nav_btn:hover{
+    background: var(--color-white);
+}
+
 /*HIDE NAV MENU ON TABLET AND PHONES*/
 
 @media screen and (max-width: 1024px) {
-    .nav_menu{
+    .nav_menu_item{
+        display: none;
+    }
+
+    #nav_btn{
         display: none;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .nav_menu{
+    .nav_menu_item{
+        display: none;
+    }
+
+    #nav_btn{
         display: none;
     }
 }

@@ -28,12 +28,11 @@ const Navbar = () => {
       <div className=" nav_container">
 
       <HashLink smooth to="/#top" className="nav_logo">
-          <img src={Logo} alt="Logo" />
-        </HashLink>
-
+          <img src={Logo} alt="" />
+      </HashLink>
         {/* Navigation menu section */}
         <ul className="nav_menu">
-          <li>
+          <li className="nav_menu_item">
             <HashLink
               smooth
               to="/#top"
@@ -42,12 +41,12 @@ const Navbar = () => {
               Home
             </HashLink>
           </li>
-          <li>
+          <li className="nav_menu_item">
             <NavLink to="/about" activeClassName="active">
               About Us
             </NavLink>
           </li>
-          <li>
+          <li className="nav_menu_item">
             <HashLink
               smooth
               to="/#ourSolutions"
@@ -56,7 +55,7 @@ const Navbar = () => {
               Our Solutions
             </HashLink>
           </li>
-          <li>
+          <li className="nav_menu_item">
             <HashLink
               smooth
               to="/"
