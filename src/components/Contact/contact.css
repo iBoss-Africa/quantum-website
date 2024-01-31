@@ -166,13 +166,13 @@
     }
 
     .contact_form_container {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
+        align-items: center;
     }
 
-    /* .contact_form_container a{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    } */
+    .btn {
+        margin-top: 20px;
+        margin-left: 40px;
+      }
 }
