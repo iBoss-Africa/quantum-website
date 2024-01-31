@@ -63,6 +63,12 @@
 
 /* Media Queries Phones */
 @media screen and (max-width: 600px) {
+
+  #ourSolutions{
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
   #ourSolutions h2 {
       font-size: 2rem;
   }

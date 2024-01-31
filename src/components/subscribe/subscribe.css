@@ -81,3 +81,28 @@
 .button:hover {
   background-color: #4c4c6d;
 }
+
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .mb-6{
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading{
+    padding-bottom: 10px;
+  }
+
+  .input {
+    width: 160%;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
