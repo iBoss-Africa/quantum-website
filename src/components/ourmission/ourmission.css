@@ -54,3 +54,28 @@
     background-color: #FFFFFF;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
+/* Media Queries (tablets) */
+@media screen and (max-width: 1024px) {
+    .card_mission{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Media Queries (phones) */
+@media screen and (max-width: 600px) {
+    .first_mission{
+        padding: 20px;
+    }
+
+    .second_mission{
+        padding: 20px;
+    }
+
+    .card_mission{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
