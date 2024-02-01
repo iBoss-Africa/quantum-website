@@ -20,6 +20,10 @@ HashLink {
     margin-right: 30%;
 }
 
+.active {
+    color: var(--color-primary);
+}
+
 /* Styling for the container within the navigation bar */
 .nav_container {
     display: flex;
