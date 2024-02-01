@@ -36,10 +36,6 @@ HashLink {
     font-weight: 400;
 }
 
-.space_container {
-    padding-left: 800px;
-}
-
 /* Styling for the logo within the navigation bar */
 .nav_logo {
     width: 10rem;
