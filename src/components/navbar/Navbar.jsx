@@ -1,37 +1,86 @@
-import './navbar.css'
-import Logo from '../../assets/navbar/logo.svg';
+import React, { useState, useEffect, useRef } from "react";
+import "./navbar.css";
+import Logo from "../../assets/navbar/logo.svg";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 800);
 
-   // Get the current pathname and hash from the location object
-   const { pathname, hash } = useLocation();
+  // Get the current pathname and hash from the location object
+  const { pathname, hash } = useLocation();
 
-   // Scroll to top whenever the pathname changes
-   useEffect(() => {
-     window.scrollTo(0, 0);
-   }, [pathname]);
- 
-   // Function to check if a link should be active based on the current hash
-   const isActive = (hashValue) => {
-     return hash === hashValue;
-   };
- 
+  // Reference for the dropdown menu
+  const dropdownRef = useRef();
+
+  // Scroll to top whenever the pathname changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  // Function to check if a link should be active based on the current hash
+  const isActive = (hashValue) => {
+    return hash === hashValue;
+  };
+
+  // Toggle the mobile menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Close the menu when clicking outside
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Attach the event listener when the component mounts
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  // Check window size on resize and update isLargeScreen state
+  const handleResize = () => {
+    setIsLargeScreen(window.innerWidth > 800);
+  };
+
+  useEffect(() => {
+    // Attach the event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <nav>
-
-      {/* Container for the navigation elements */}
-      <div className=" nav_container">
-
-      <HashLink smooth to="/#top" className="nav_logo">
+      <div className="nav_container">
+        <HashLink smooth to="/#top" className="nav_logo">
           <img src={Logo} alt="" />
-      </HashLink>
+        </HashLink>
+
+        {/* Hamburger Menu Icon */}
+        <div
+          className={`hamburger_menu ${isMenuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
         {/* Navigation menu section */}
-        <ul className="nav_menu">
+        <ul className={`nav_menu ${isMenuOpen ? "open" : ""}`} ref={dropdownRef}>
           <li className="nav_menu_item">
             <HashLink
               smooth
@@ -58,19 +107,24 @@ const Navbar = () => {
           <li className="nav_menu_item">
             <HashLink
               smooth
-              to="/"
+              to="/#services"
               className={isActive("#services") ? "active" : ""}
             >
               Blog
             </HashLink>
           </li>
+          {/* Contact button visible on larger screens or when the menu is open */}
+          {(isLargeScreen || isMenuOpen) && (
+            <li className="nav_menu_item">
+              <a href="#our_contact" id="nav_btn" className="btn primary">
+                Contact Us
+              </a>
+            </li>
+          )}
         </ul>
-        {/* Nav icon button */}
-        <a href="#our_contact" id='nav_btn' className='btn primary'>Contact Us</a>
       </div>
-
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

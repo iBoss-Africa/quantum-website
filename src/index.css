@@ -104,7 +104,6 @@ h3 {
 
 h4 {
     font-size: 1.1rem;
-    
 }
 
 h5 {
@@ -128,7 +127,6 @@ img {
     width: fit-content;
     display: flex;
     align-items: center;
-    gap: 1rem;
     background: var(--color-light);
     color: var(--color-black);
     padding: 0.6rem 2.5rem;
@@ -175,7 +173,7 @@ img {
     body {
         font-size: 1rem;
     }
-    
+
     .container {
         width: var(--container-width-md);
     }
