@@ -22,4 +22,25 @@ object-fit: cover;
 
 .founder_text h2 {
     padding-bottom: 20px;
-  }
+}
+
+/* Media Queries (tablets) */
+@media screen and (max-width: 1024px){
+    .founder_container{
+        flex-direction: column;
+    }
+
+    .founder_text{
+        text-align: center;
+    }
+
+    .founder_img{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Media Queries (phones) */
+@media screen and (max-width: 600px){
+
+}
