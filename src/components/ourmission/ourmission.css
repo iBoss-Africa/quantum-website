@@ -65,6 +65,10 @@
 
 /* Media Queries (phones) */
 @media screen and (max-width: 600px) {
+    #our_vision{
+        padding-bottom: 10px;
+    }
+
     .first_mission{
         padding: 20px;
     }
