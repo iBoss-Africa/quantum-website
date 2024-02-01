@@ -10,12 +10,6 @@
     padding-bottom: 20px;
 }
 
-/* .about_header_content p {
-    text-align: center;
-    
-
-} */
-
-.orange{
+.orange{ 
     color: var(--color-primary);
 }
