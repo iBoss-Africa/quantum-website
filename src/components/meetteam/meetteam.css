@@ -8,6 +8,8 @@
 
 .meet_cards {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2.8rem;
     width: 100%;
     flex-direction: row;
@@ -16,4 +18,38 @@
 
 .meet_card{
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meet_card img{
+    padding-bottom: 10px;
+}
+
+
+/* Media Queries (tablets) */
+@media screen and (max-width: 1024px){
+    .meet_cards{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .meet_card{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .meet_card img{
+        /* padding-bottom: 10px; */
+        width: 100%;
+    }
+}
+
+/* Media Queries (phones) */
+@media screen and (max-width: 600px){
+    .meet_cards{
+        flex-direction: column;
+    }
 }
