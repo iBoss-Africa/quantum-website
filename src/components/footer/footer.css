@@ -28,6 +28,7 @@
 
 .footer_container p {
   font-size: smaller;
+  padding-bottom: 10px;
 }
 
 .footer_container h5 {
@@ -45,17 +46,10 @@
   gap: 15px;
 }
 
-
-
-.footer_socials{
-  width: 20%;
-  display: flex;
-}
-
 .socials {
   display: flex;
   align-self: self-start;
-  gap: 5px;
+  gap: 16px;
 }
 
 

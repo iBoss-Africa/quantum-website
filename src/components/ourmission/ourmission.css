@@ -1,6 +1,11 @@
 #our_vision{
-    padding-top: 6.875rem;
+    padding-top: 40px;
+    padding-bottom: 80px;
     background: #F2F2F2;
+}
+
+#our_vision h2{
+    text-align: center;
 }
 
 .our_vision_content {
@@ -10,7 +15,11 @@
 
 .first_mission{
     padding: 60px;
+}
 
+.first_mission p{
+    font-size: 24;
+    text-align: center;
 }
 
 .first_mission_text{
@@ -18,13 +27,17 @@
     background-color: #E77D22;
     border-radius: 8px;
     color: white;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-    box-shadow: 0px 24px 10px -20px rgba(0,0,0,0.45) inset;
+    box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset;
 }
 
 .second_mission{
     background-color: #F07D22;
     padding: 80px;
+}
+
+.second_mission p{
+    font-size: 24;
+    text-align: center;
 }
 
 .second_mission_text{
@@ -33,19 +46,19 @@
     background-color: #E77D22;
     border-radius: 8px;
     color: white;
-    /* box-shadow: 0px 20px 10px -20px rgba(0,0,0,0.45) inset,
-    20px 0px 10px -20px rgba(0,0,0,0.45) inset,
-    -5px 0px 12px 0px rgba(0,0,0,0.22) inset; */
-
-    box-shadow: 0px 24px 10px -20px rgba(0,0,0,0.45) inset;
+    box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset;
 }
 
 .card_mission{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
     padding-top: 90px;
-    padding-bottom: -60px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: 168px;
 }
 
 .card_mission p{

@@ -12,7 +12,7 @@ const Ourvision = () => {
         <div className="first_mission">
           <div className="first_mission_text">
             <p>
-              To empower businesses & communities through our products. We are
+              To empower businesses & communities through our products. We are 
               dedicated to delivering cutting-edge solutions that solve
               real-world challenges and drive growth
             </p>

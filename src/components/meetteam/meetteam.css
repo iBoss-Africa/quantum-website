@@ -1,3 +1,8 @@
+#meet_team{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .meet_container {
     display: flex;
     flex-direction: column;

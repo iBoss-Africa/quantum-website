@@ -1,6 +1,8 @@
 /* Styling for the container within the about section */
 #about{
-    background: #F0F9FF;
+    background: #FFF9F5;
+    padding-top:80px;
+    padding-bottom: 90px;
 }
 
 .about_container{
@@ -11,13 +13,6 @@
     justify-self: center;
 }
 
-/* Styling for the portrait image within the about section */
-/* .about_left img{
-    width: 100%;
-    height: 100%;
-} */
-
-
 /* Styling for the paragraphs within the right side of the about section */
 .about_right p{
     margin-top: 0.8rem;
@@ -27,6 +22,11 @@
 .about_right .btn{
     margin-top: 2.5rem;
     
+}
+
+.about_portrait img{
+    width: 140%;
+    padding-right: 40px;
 }
 
 /* Media Queries Tablets */

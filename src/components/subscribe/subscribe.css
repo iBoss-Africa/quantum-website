@@ -20,16 +20,18 @@
 }
 
 .heading {
-  font-size: 3xl;
+  font-size: 34;
   font-weight: bold;
   color: #333;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .paragraph {
   margin-top: 2px;
   font-size: small;
   color: #666;
+  padding-bottom: 20px;
 }
 
 .form-container {

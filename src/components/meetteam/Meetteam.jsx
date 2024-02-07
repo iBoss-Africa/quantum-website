@@ -5,7 +5,7 @@ import Image from "../../assets/meet_the_team/meet_team.svg"
 
 const Meetteam = () => {
   return (
-    <section>
+    <section id="meet_team">
       <div className="container meet_container">
         <div className="meet_header">
           <h2>Meet the Team</h2>
