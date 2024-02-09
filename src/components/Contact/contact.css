@@ -1,5 +1,5 @@
 #our_contact {
-    background-color: #F1842D;
+    background-image: url("../../assets/contact/contactusbg.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
