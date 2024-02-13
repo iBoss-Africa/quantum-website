@@ -1,6 +1,8 @@
 #founder{
     background-color: #FFFFFF;
     background-image: url("../../assets/founder/founderbg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .founder_container{

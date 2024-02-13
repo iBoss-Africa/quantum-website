@@ -1,6 +1,8 @@
 .bg-wrapper {
   background-color: #FFF9F5;
   background-image: url("../../assets/subscribe/subscribebg.png");
+  background-size: cover;
+  background-position: center;
   padding: 60px 0px;
 }
 
