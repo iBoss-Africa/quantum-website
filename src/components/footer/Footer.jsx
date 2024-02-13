@@ -47,16 +47,16 @@ const Footer = () => {
         <div className="social_media">
           <h5>Follow us on:</h5>
           <div className="socials">
-            <a href="#">
+            <a href="/">
               <img className="footer_social" src={twitter} alt="" />
             </a>
-            <a href="#">
+            <a href="/">
               <img className="footer_social" src={instagram} alt="" />
             </a>
-            <a href="#">
+            <a href="/">
               <img className="footer_social" src={youtube} alt="" />
             </a>
-            <a href="#">
+            <a href="/">
               <img className="footer_social" src={facebook} alt="" />
             </a>
           </div>
