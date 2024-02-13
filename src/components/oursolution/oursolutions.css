@@ -3,6 +3,8 @@
   padding-top: 60px;
   padding-bottom: 40px;
   background-image: url("../../assets/our_solutions/OURSOLNSBG.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .oursolutions_container {
