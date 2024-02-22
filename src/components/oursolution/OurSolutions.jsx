@@ -1,8 +1,32 @@
 import "./oursolutions.css";
 import Tango from "../../assets/our_solutions/Tango.svg";
 import SmartPos from "../../assets/our_solutions/smartpos.svg";
+import React,{ useEffect, useState } from "react";
 
 const Ourworks = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://iboss-webapi.onrender.com/v1/api/our-work?website=quantum"
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setProjects(data);
+        } else {
+          console.error("Failed to fetch projects:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Failed to fetch projects:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+
   return (
     <section id="ourSolutions">
       <h2>Our Solutions</h2>
@@ -12,12 +36,9 @@ const Ourworks = () => {
             <img src={Tango} alt="" />
           </div>
           <div className="top_right">
-            <h2>Tango</h2>
+            <h2>{projects[0]?.title}</h2>
             <p>
-              Logistics companies are essential for businesses in various
-              industries, from e-commerce and manufacturing to retail and
-              healthcare, as they ensure that products reach their destinations
-              in a timely and cost-effective manner.
+              {projects[0]?.description}
             </p>
             <a href="/" className="btn primary">
               Learn More
@@ -26,12 +47,9 @@ const Ourworks = () => {
         </div>
         <div className="bot">
           <div className="bot_left">
-            <h2>Smart Pos</h2>
+            <h2>{projects[1]?.title}</h2>
             <p>
-              We redefine transaction experiences with our state-of-the-art
-              Point of Sale solutions. With a commitment to innovation, we
-              empower businesses to thrive by providing seamless, secure, and
-              efficient payment processing.
+              {projects[1]?.description}
             </p>
             <a href="/" className="btn primary">
               Coming Soon
