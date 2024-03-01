@@ -3,6 +3,8 @@
     background-image: url("../../assets/founder/founderbg.png");
     background-size: cover;
     background-position: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 .founder_container{

@@ -26,11 +26,11 @@ const Header = () => {
           </p>
 
           {/* Call-to-action buttons section */}
-          <div className="header_cta">
+          {/* <div className="header_cta">
             <a href="#contact" className="btn primary header-btn">
               Contact Us
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Header image section */}
