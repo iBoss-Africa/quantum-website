@@ -35,7 +35,7 @@ const About = () => {
             in commerce .
           </p>
           {/* Read More button */}
-          <a href="/" className="btn primary">
+          <a href="/about" className="btn primary">
             Read More
           </a>
         </div>
