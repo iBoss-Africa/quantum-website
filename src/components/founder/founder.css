@@ -23,7 +23,7 @@
 }
 
 .founder_text{
-    width: 50%;
+    width: 100%;
 }
 
 .founder_text h2 {
@@ -50,6 +50,7 @@
 @media screen and (max-width: 600px){
     .founder_container{
         flex-direction: column;
+        width: 100%;
     }
 
     .founder_text{

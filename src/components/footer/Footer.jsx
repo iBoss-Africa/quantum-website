@@ -53,9 +53,9 @@ const Footer = () => {
             <a href="/">
               <img className="footer_social" src={instagram} alt="" />
             </a>
-            <a href="/">
+            {/* <a href="/">
               <img className="footer_social" src={youtube} alt="" />
-            </a>
+            </a> */}
             <a href="/">
               <img className="footer_social" src={facebook} alt="" />
             </a>

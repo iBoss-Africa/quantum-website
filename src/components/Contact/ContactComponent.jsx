@@ -10,7 +10,7 @@ const ContactComponent = () => {
     <section id="our_contact">
       <h2>Contact Us</h2>
       <p className="contact_text">
-        If you have any questions, please do not hesitate to send us a message. <br />
+        If you have any questions, please do not hesitate to send us a message.
         We are always open to your questions, feedback and enquiries.
       </p>
       <div className="container contact_info_container">
