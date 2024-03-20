@@ -113,6 +113,16 @@ const Navbar = () => {
               Blog
             </HashLink>
           </li>
+
+      {/* "Send us a message" button visible only in the mobile dropdown menu */}
+      {isMenuOpen && (
+            <li className="nav_menu_item">
+              <a href="#send_message" id="ham_btn" className="btn primary">
+                Contact Us
+              </a>
+            </li>
+          )}
+
           {/* Contact button visible on larger screens or when the menu is open */}
           {(isLargeScreen || isMenuOpen) && (
             <li className="nav_menu_item">

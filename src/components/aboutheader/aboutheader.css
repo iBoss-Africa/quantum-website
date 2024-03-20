@@ -6,13 +6,32 @@
 
 .about_header_content h2 {
     text-align: center;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     justify-self: center;
-    padding-bottom: 20px;
+    padding-bottom: 20px; */
     font-size: 38;
 }
 
 .orange{ 
     color: var(--color-primary);
+}
+
+/* Media Queries (tablets) */
+@media screen and (max-width: 1024px) {
+    .about_header_content h2{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Media Queries (phones) */
+@media screen and (max-width: 600px) {
+    .about_header_content h2{
+        font-size: 30px;
+    }
+
+    .about_header_content p{
+        font-size: 16;
+    }
 }
